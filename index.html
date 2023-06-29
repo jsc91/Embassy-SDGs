@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDGs Introduction</title>
+  <link rel="stylesheet" href="styles.css"> <!-- External CSS file for styling -->
+  <style>
+
+    header {
+      background-color: #333333;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      flex-grow: 1;
+    }
+    nav ul li {
+      float: left;
+    }
+    nav ul li a {
+      display: block;
+      color: #ffffff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+    nav ul li a:hover {
+      background-color: #ffffff;
+      color: #333333;
+    }
+    .logo {
+      max-width: 400px;
+      height: 60px;
+      margin-right: 20px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      line-height: 1.5;
+      background-color: #222222;
+    }
+    h1, h2, h3 {
+      color: #ffffff;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    a {
+      color: #4c9f38;
+      transition: color 0.3s ease-in-out;
+    }
+    a:hover {
+      color: #83d475;
+    }
+    footer {
+      background-color: #333333;
+      padding: 20px;
+      text-align: center;
+    }
+    footer p {
+      margin: 0;
+      color: #ffffff;
+      font-size: 14px;
+    }
+    .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 16px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-weight: bold;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.prf{
+float: left;
+}
+.name{
+float: left;
+}
+.role {
+float: left;
+}
+.profile{
+background-color: #333333;
+}
+.info{
+  padding: -40px 2px;
+  text-align: center;
+}
+    .team-member {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .team-member-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .team-member-image {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .team-member-name {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .team-member-role {
+      font-style: italic;
+      margin-top: 5px;
+    .gallery {
+      width: 500px;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .gallery-wrapper {
+       width: 500px; /* Adjust the width as per your requirements */
+       overflow: auto;
+}
+
+    .gallery {
+       white-space: nowrap;
+}
+
+    .gallery-image {
+       display: inline-block;
+      width: 300px; /* Adjust the width as per your requirements */
+       height: auto;
+       margin: 5px;
+}
+
+    .team-member{
+       background-color: #373b40;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-small.png" alt="School Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+    <div class="dropdown">
+    <button class="dropbtn">SDGs
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="SDG2 Zero Hunger.html" target="_blank">SDG-2 Zero Hunger</a>
+     <!-- <a href="#">Link 2</a>
+      <a href="#">Link 3</a>//-->
+    </div>
+  </div>
+        <li><a href="#initiatives">Initiatives</a></li>
+        <li><a href="https://unfoundation.org/what-we-do/issues/sustainable-development-goals/" target="_blank"> Get Involved</a></li>
+        <li><a href="https://www.globalgoals.org/news/" target="_blank">News</a></li>
+            <div class="dropdown">
+    <button class="dropbtn">Contact
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#" target="_blank">Mail: embassypublicschool@yahoo.co.in</a>
+     <!-- <a href="#">Link 2</a>
+      <a href="#">Link 3</a>//-->
+    </div>
+  </div>
+      </ul>
+    </nav>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_QLsD8M.json"  background="transparent"  speed="1"  style="width: 70px; height: 70px;" hover   autoplay></lottie-player>
+  </header>
+  <center>
+  <section id="home">
+    <div class="banner">
+      <h1>Working Towards Sustainable Development Goals</h1>
+      <p>Join us in achieving a world with Zero Hunger</p>
+
+    </div>
+  </section>
+  </center>
+
+  <section id="UN">
+      <h1>United Nations</h1>
+      <p>The United Nations (UN) is an intergovernmental organization whose stated aims are to maintain international peace and security, develop friendly relations among nations, achieve international cooperation, and serve as a centre for harmonizing the actions of nations.
+</p>
+      <p> It is the world's largest international organization. The UN has over 193 member states. Its headquarters are in New York City, and it has offices in Geneva, Nairobi, and Vienna.</p>
+      <p>The United Nations, referred to informally as the UN, is an intergovernmental organization whose stated purposes are to maintain international peace and security, develop friendly relations among nations, achieve international cooperation, and serve as a centre for harmonizing the actions of nations. It is the world's largest international organization. The UN is headquartered on international territory in New York City, and the organization has other offices in Geneva, Nairobi, Vienna, and The Hague, where the International Court of Justice is headquartered.</p>
+    <p>The UN was established after World War II with the aim of preventing future world wars, and succeeded the League of Nations, which was characterized as ineffective. On 25 April 1945, 50 nations met in San Francisco, California for a conference and started drafting the UN Charter, which was adopted on 25 June 1945. The charter took effect on 24 October 1945, when the UN began operations. The organization's objectives, as defined by its charter, include maintaining international peace and security, protecting human rights, delivering humanitarian aid, promoting sustainable development, and upholding international law. At its founding, the UN had 51 member states; as of 2023, it has 193 – almost all of the world's sovereign states.</p>
+    <p>The organization's mission to preserve world peace was complicated in its early decades due in part to Cold War tensions that existed between the United States and Soviet Union and their respective allies. Its mission has included the provision of primarily unarmed military observers and lightly armed troops charged with primarily monitoring, reporting and confidence-building roles. UN membership grew significantly following widespread decolonization in the 1960s. Since then, 80 former colonies have gained independence, including 11 trust territories that had been monitored by the Trusteeship Council. By the 1970s, the UN's budget for economic and social development programmes vastly exceeded its spending on peacekeeping. After the end of the Cold War in 1991, the UN shifted and expanded its field operations, undertaking a wide variety of complex tasks.</p>
+
+    <p>The UN has six principal operational organizations: the General Assembly, the Security Council, the Economic and Social Council, the International Court of Justice, the UN Secretariat, and the Trusteeship Council, although the Trusteeship Council has been inactive since 1994. The UN System includes a multitude of specialized agencies, funds, and programmes, including the World Bank Group, the World Health Organization, the World Food Programme, UNESCO, and UNICEF. Additionally, non-governmental organizations may be granted consultative status with the Economic and Social Council and other agencies.</p>
+
+    <br>
+
+    <p><i>Source: Wikipedia</i></p>
+  </section>
+
+  <section id="sdg-introduction">
+    <div class="sdg-intro-info">
+
+      <h1>WHAT IS SDG ? </h1>
+      <p>The Sustainable Development Goals (SDGs) are a set of 17 global goals established by the United Nations in 2015. These goals aim to address some of the most pressing challenges faced by humanity and the planet, including poverty, inequality, climate change, and environmental degradation.</p>
+      <p>The SDGs provide a comprehensive framework for sustainable development, integrating social, economic, and environmental dimensions. They are interconnected and mutually reinforcing, emphasizing the need for collaboration and collective action to achieve a more sustainable and inclusive future for all.</p>
+      <p>By aligning their efforts with the SDGs, governments, organizations, and individuals can contribute to building a better world, leaving no one behind.</p>
+      <p>The Sustainable Development Goals or Global Goals are a collection of seventeen interlinked objectives designed to serve as a "shared blueprint for peace and prosperity for people and the planet, now and into the future". The SDGs are: no poverty; zero hunger; good health and well-being; quality education; gender equality; clean water and sanitation; affordable and clean energy; decent work and economic growth; industry, innovation and infrastructure; reduced inequalities; sustainable cities and communities; responsible consumption and production; climate action; life below water; life on land; peace, justice, and strong institutions; and partnerships for the goals. The SDGs emphasize the interconnected environmental, social and economic aspects of sustainable development by putting sustainability at their center</p>
+      <p>The SDGs were formulated in 2015 by the United Nations General Assembly (UNGA) as part of the Post-2015 Development Agenda, which sought to create a future global development framework to succeed the Millennium Development Goals, which ended that year. They were formally articulated and adopted in a UNGA resolution called the 2030 Agenda, known colloquially as Agenda 2030. On 6 July 2017, the SDGs were made more actionable by a UNGA resolution that identifies specific targets for each goal and provides indicators to measure progress. Most targets are to be achieved by 2030, although some have no end date. The International Monetary Fund (IMF) has also taken the initiative to achieve the SDGs by offering their support to developing countries. For example, the IMF works to reduce poverty in low-income developing countries by offering financial support during the COVID-19 pandemic.</p>
+      <p>There are cross-cutting issues and synergies between the different goals; for example, for SDG 13 on climate action, the IPCC sees robust synergies with SDGs 3 (health), 7 (clean energy), 11 (cities and communities), 12 (responsible consumption and production) and 14 (oceans).: 70  Conversely, critics and observers have also identified trade-offs between the goals,: 67 such as between ending hunger and promoting environmental sustainability.: 26  Other concerns include there being too many goals (resulting in compounding trade-offs), a weak emphasis on environmental sustainability, and difficulties tracking qualitative indicators.</p>
+
+      <a href="https://www.globalgoals.org/" class="cta-button" target="_blank">Learn About SDG's</a>
+    <br>
+
+    <p><i>Source: Wikipedia</i></p>
+    </div>
+  </section>
+
+  <section>
+    <h1>Our Group</h1>
+    <p>"Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results." </p>
+    <p>With our Golden Team, we aim forward to create a Golden World for Everyone for a Happy living </p>
+    <p>A short Introduction of our team </p>
+      </section>
+
+  <section class="team-member">
+    <div class="team-member-item">
+      <img src="Shashank.jpg" alt="Team Member 1" class="team-member-image">
+      <h3 class="team-member-name">Shashank Raj</h3>
+      <p class="team-member-role">Team Lead</p>
+    </div>
+
+    <div class="team-member-item">
+      <img src="Sohan.jpg" alt="Team Member 2" class="team-member-image">
+      <h3 class="team-member-name">Sohan Raj</h3>
+      <p class="team-member-role">Technical Lead</p>
+    </div>
+
+  </section>
+
+  <br>
+  <br>
+
+    <section class="team-member">
+    <div class="team-member-item">
+      <img src="me the legend .jpg" alt="Team Member 1" class="team-member-image">
+      <h3 class="team-member-name">Janhav Siddarth C</h3>
+      <p class="team-member-role">Technical Manager and Designer</p>
+    </div>
+
+    <div class="team-member-item">
+      <img src="varshith.jpg" alt="Team Member 2" class="team-member-image">
+      <h3 class="team-member-name">Varshith Raj</h3>
+      <p class="team-member-role">Data Analyst Lead</p>
+    </div>
+
+  </section>
+
+  <br>
+  <br>
+
+    <section class="team-member">
+    <div class="team-member-item">
+      <img src="chandana.jpg" alt="Team Member 1" class="team-member-image">
+      <h3 class="team-member-name">Chandana N</h3>
+      <p class="team-member-role">Co-lead and Art Lead</p>
+    </div>
+
+    <div class="team-member-item">
+      <img src="diya.jpg" alt="Team Member 2" class="team-member-image">
+      <h3 class="team-member-name">Diya Jain</h3>
+      <p class="team-member-role">Event Lead</p>
+    </div>
+
+  </section>
+
+  <br>
+  <br>
+
+    <section class="team-member">
+    <div class="team-member-item">
+      <img src="yajurvi.jpg" alt="Team Member 1" class="team-member-image">
+      <h3 class="team-member-name">Yajurvi R Shaiva</h3>
+      <p class="team-member-role">Data Analyst</p>
+    </div>
+
+    <div class="team-member-item">
+      <img src="drutikha.jpg" alt="Team Member 2" class="team-member-image">
+      <h3 class="team-member-name">Dhuthika.T</h3>
+      <p class="team-member-role">Data Analyst Lead </p>
+    </div>
+
+  </section>
+
+  <br>
+  <br>
+
+    <section class="team-member">
+    <div class="team-member-item">
+      <img src="ananya.jpg" alt="Team Member 1" class="team-member-image">
+      <h3 class="team-member-name">Ananya.KH</h3>
+      <p class="team-member-role">Data Analyst</p>
+    </div>
+
+    <div class="team-member-item">
+      <img src="team_member2.jpg" alt="Team Member 2" class="team-member-image">
+      <h3 class="team-member-name"></h3>
+      <p class="team-member-role">Event Manager</p>
+    </div>
+
+  </section>
+
+  <br>
+  <br>
+
+    <footer>
+    <p>&copy; 2023 (Group Name). All rights reserved.</p>
+  </footer>
+
+<!--<section id="gallery">
+<center>
+  <h1>Gallery</h1>
+</center>
+
+<div class="gallery-wrapper">
+  <div class="gallery">
+    <img class="gallery-image" src="880946.jpg" alt="Image 1">
+    <img class="gallery-image" src="wp10564193.jpg" alt="Image 2">
+    <img class="gallery-image" src="581016-ford-mustang.jpg" alt="Image 3">
+
+  </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+  <script>
+const scrollSpeed = 10;
+
+
+function scrollGallery() {
+  const gallery = document.querySelector('.gallery');
+  gallery.scrollLeft += scrollSpeed;
+
+
+  if (gallery.scrollLeft >= gallery.scrollWidth - gallery.offsetWidth) {
+    gallery.scrollLeft = 0;
+  }
+}
+
+
+setInterval(scrollGallery, 100);
+  </script>.
+  //-->
+</body>
+</html>
