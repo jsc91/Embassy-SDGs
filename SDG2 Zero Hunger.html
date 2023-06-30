@@ -1,170 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SDGs Introduction</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1&display=swap" rel="stylesheet">
+
+
+<style>
+body {
+      margin:0;
+
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      line-height: 1.5;
+      background-color: #222222;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
     header {
       background-color: #333333;
       padding: 10px;
       display: flex;
       align-items: center;
     }
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      flex-grow: 1;
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+.profile{
+background-color: #333333;
+}
+ footer {
+     background-color: #333333;
+     padding: 20px;
+     text-align: center;
+  }
+  footer p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
     }
-
-    nav ul li {
-      display: inline-block;
-    }
-
-    nav ul li a {
-      display: block;
-      color: #ffffff;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease-in-out;
-    }
-
-    nav ul li a:hover {
-      background-color: #ffffff;
-      color: #333333;
-    }
-
-    .logo {
-      max-width: 100%;
-      height: auto;
-      margin-right: 20px;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      color: #ffffff;
-      line-height: 1.5;
-      background-color: #222222;
-      margin: 0;
-      padding: 0;
-    }
-
-    h1, h2, h3 {
-      color: #ffffff;
-    }
-
-    p {
-      margin-bottom: 20px;
-    }
-
-    a {
+  a {
       color: #4c9f38;
-      transition: color 0.3s ease-in-out;
+      transition: color 1s ease-in-out;
+    }
+  a:hover {
+        color: #83d475;
+    }
+  .logo {
+      max-width: 300px;
+      height: 45px;
+
+      padding-left: 30px;
+    }
+.info{
+  padding: -40px 2px;
+  text-align: center;
+}
+    .team-member {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
     }
 
-    a:hover {
-      color: #83d475;
-    }
-
-    footer {
-      background-color: #333333;
-      padding: 20px;
+    .team-member-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
       text-align: center;
     }
 
-    footer p {
-      margin: 0;
-      color: #ffffff;
-      font-size: 14px;
+    .team-member-image {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
     }
 
-    .dropdown {
+    .team-member-name {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .team-member-role {
+      font-style: italic;
+      margin-top: 5px;
+    .gallery {
+      width: 500px;
+      height: 300px;
+      overflow: hidden;
       position: relative;
-      display: inline-block;
     }
 
-    .dropdown .dropbtn {
-      font-size: 16px;
-      border: none;
-      outline: none;
-      color: white;
-      padding: 16px 16px;
-      background-color: inherit;
-      font-family: inherit;
-      margin: 0;
-      font-weight: bold;
-    }
 
-    .navbar a:hover, .dropdown:hover .dropbtn {
-      background-color: white;
-      color: black;
-      font-weight: bold;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-
-    .dropdown-content a {
-      float: none;
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #ddd;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-  </style>
+</style>
 </head>
 <body>
-  <header>
-    <img src="Screenshot_2023-06-29_125918-removebg-preview.png" alt="School Logo" class="logo" height="40" width="40">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown">
-          <button class="dropbtn">SDGs
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="SDG2 Zero Hunger.html" target="_blank">SDG-2 Zero Hunger</a>
-          </div>
-        </li>
-        <li><a href="#hcyh">How can you help?</a></li>
-        <li><a href="https://unfoundation.org/what-we-do/issues/sustainable-development-goals/" target="_blank">Get Involved</a></li>
-        <li><a href="https://www.globalgoals.org/news/" target="_blank">News</a></li>
-        <li class="dropdown">
-          <button class="dropbtn">Contact
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#" target="_blank">Mail: embassypublicschool@yahoo.co.in</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_QLsD8M.json" background="transparent" speed="1" style="width: 70px; height: 70px;" hover autoplay></lottie-player>
-  </header>
-  <section id="sdg2">
+
+<div class="topnav" id="myTopnav">
+  <img src="Screenshot_2023-06-29_125918-removebg-preview.png" alt="School Logo" class="logo">
+  <a href="index.html" class="active">Home</a>
+   <div class="dropdown">
+    <button class="dropbtn">SDGs
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="SDG2 Zero Hunger.html">SDG 2 Zero Hunger</a>
+    </div>
+  </div>
+  <a href="#ourgroup">Our Group</a>
+  <a href="https://unfoundation.org/what-we-do/issues/sustainable-development-goals/">Get Involved</a>
+
+  <a href="https://www.globalgoals.org/news/">News</a>
+
+    <div class="dropdown">
+    <button class="dropbtn">Contact
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+
+      <a href="#">Mail: embassypublicschool@yahoo.co.in</a>
+    </div>
+  </div>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<section id="sdg2">
     <div class="sdg2-info">
       <center>
         <h1>SDG 2 Zero Hunger</h1>
@@ -210,8 +270,23 @@
       <center><h1>Thank You!</h1></center>
     </div>
   </section>
-  <footer>
-    <p>&copy; 2023 Your Organization. All rights reserved.</p>
+
+    <footer>
+    <p>&copy; 2023 (Group Name). All rights reserved.</p>
   </footer>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
 </body>
 </html>
